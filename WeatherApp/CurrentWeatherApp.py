@@ -7,6 +7,7 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap, QIcon
 import sys
 import requests
+import string
 
 class WeatherApp(QMainWindow):
     def __init__(self, api_key):
@@ -99,9 +100,10 @@ class WeatherApp(QMainWindow):
 
         if self.city_input.text() == '':
             return
-        elif not self.city_input.text().isalpha():
-            self.display_error("Invalid characters in city name")
-            return
+        for char in self.city_input.text():
+            if char in string.digits:
+                self.display_error("Invalid characters in city name")
+                return
 
         self.geocode()
 
