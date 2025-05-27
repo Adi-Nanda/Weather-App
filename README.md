@@ -7,7 +7,7 @@ Interactive weather app with modern UI, made using PyQt6 in python which show re
 Download the WeatherApp.exe file along with the icons folder and place them in the same folder.
 Run the executable file
 
-Does not require python or its libraries install on the machine
+Does not require python or its libraries installed on the machine.
 
 ### 2) Using python file
 Download main.py and icons folder and place them in the same folder.
@@ -21,7 +21,7 @@ pip install PyQt6
 ```bash
 pip install requests
 ```
-Generate your own API key from [openweathermap.org](https://openweathermap.org/api) and set the api_key variable to it in the main() function
+Generate your own API key from [openweathermap.org](https://openweathermap.org/api) and set the api_key variable in the main() function to that key
 ___
 ### Images :
 ![screenshot](screenshots/Screenshot-1.png)
